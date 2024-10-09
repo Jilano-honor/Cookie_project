@@ -1,4 +1,60 @@
+body{
+    background-color: var(--secondary-color);
+}
+main,header{
+    background-color: var(--quaternary-color);
+    margin: 0 2.5rem;
+}
 nav{
     display: flex;
-    background-color: aliceblue;
+    background-color:var(--primary-color);
+    justify-content:space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 2rem;
+ }
+ nav>ul{
+    display:flex;
+    gap: 1.5rem;
+ }
+ nav>ul>li{
+    font-weight: bolder;
+ }
+ nav>p>a{
+    text-decoration: none;
+    color:var(--tertiary-color);
+}
+header{
+    border-radius: 50px;
+    background-color: chartreuse;   
+}
+#section-Zak{
+    background-color: blue;
+    border-radius: 35px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    justify-items: center;
+    margin:0 3rem;
+}
+#section-Augustin{
+    background-color: yellow;
+    border-radius: 35px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    justify-items: center;
+    margin:0 3rem;
+}
+#section-Julien{
+    background-color: lightcyan;
+    border-radius: 35px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    justify-items: center;
+    margin:0 3rem;
 }
