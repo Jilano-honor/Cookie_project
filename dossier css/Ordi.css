@@ -1,0 +1,38 @@
+/* le clicker */
+nav{
+    display: flex;
+    background-color:var(--primary-color);
+    justify-content:space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 2rem;
+ }
+ 
+ nav>p>a{
+    text-decoration: none;
+    color:var(--tertiary-color);
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    min-height: 90vh;
+}
+.clicker-tete{
+    grid-column: 2; 
+    grid-row: 1 / -1; 
+}
+.section-upg-stat{
+    grid-column: 3; 
+    grid-row: 1 / -1; 
+  }
+footer{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+}
+footer>p{
+    max-width: 65ch;
+}
