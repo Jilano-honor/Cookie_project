@@ -1,53 +1,92 @@
-main,header{
+/* Global Styles */ 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Styles */
+main {
     background-color: var(--quaternary-color);
     margin: 0 2.5rem;
 }
-nav{
+
+/* Header Styles */
+header {
+    height: 80vh; /* Set header height to 80% of the viewport height */
     display: flex;
-    background-color:var(--primary-color);
-    justify-content:space-between;
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+    flex-direction: column;
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: center; /* Center slideshow container */
+    align-items: center; /* Center slideshow vertically */
+    width: 100%; /* Full width */
+    position: relative; /* For navigation buttons */
+    max-width: 100%;
+    overflow: hidden;
+}
+
+header img {
+    width: 50%; /* Set images to take 50% of the header space */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+    transition: none; /* No transition on hover */
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 10vh;
     padding: 0 2rem;
- }
- .logo{
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.logo {
     max-width: 50%;
     max-height: 15vh;
- }
+}
 
- nav>p>a{
+nav > p > a {
     text-decoration: none;
-    color:var(--tertiary-color);
+    color: var(--tertiary-color);
+    font-weight: bold; /* Emphasized link */
+    transition: color 0.3s ease; /* Smooth hover effect */
 }
-h1 { 
-    margin-bottom: 1rem; 
-    text-align: center; 
+
+nav > p > a:hover {
+    color: var(--highlight-color); /* Highlight color on hover */
 }
-header > section {
+
+/* Heading Styles */
+h1, h2, h3, h4 {
+    margin: 10px 0;
+    text-align: center; /* Center align headings */
+}
+
+/* Section Styles */
+section {
+    margin: 30px 0; /* Increased vertical margin */
+    border-radius: 35px;
+    overflow: hidden;
     display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-items: center;
-    margin: 3rem 2.5rem;
-    width: 50vw;
-    height: 50vh;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Gap between grid items */
+    padding: 20px; /* Inner padding */
 }
 
-header>section>article>img{
-    width: 150px;
-    height: 150px;
-}
-
-.titrev2{
-    display: flex;
- justify-content: center;
- padding-bottom: 50px;
-}
-
-#section-Zak{
-  
+/* Specific Section Styles */
+#section-Zak, #section-Augustin, #section-Julien {
     background-color: var(--tertiary-color);
-    background-size: cover;
     border-radius: 150px; 
     overflow: hidden;
     display: grid;
@@ -55,8 +94,9 @@ header>section>article>img{
     grid-template-rows: auto auto auto;
     justify-items: center;
     row-gap: 4rem;
-    margin:0 3rem;
+    margin: 0 3rem;
     margin-bottom: 3.5rem;  
+<<<<<<< HEAD
     padding-bottom: 2.5rem;
     padding-top: 2.5rem;
 
@@ -64,71 +104,47 @@ header>section>article>img{
 #section-Zak h2{
     font-size: larger;
 
+=======
+    padding: 2.5rem 0; /* Top and bottom padding */
+>>>>>>> 9d883b30efc5c2672990283aec797fa07401c358
 }
 
-#section-Augustin{
-    background-color: var(--tertiary-color);
-    border-radius: 150px;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    justify-items: center;
-    row-gap: 4rem;
-    margin:0 3rem;
-    margin-bottom: 3.5rem;
+#section-Zak h2 {
+    font-size: larger;
 }
-#section-Julien{
-    background-color: var(--tertiary-color);
-    border-radius: 150px;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    justify-items: center;
-    row-gap: 4rem;
-    margin:0 3rem;
-    margin-bottom: 3.5rem;
-}
-#section-Julien img,
-#section-Augustin img,
-#section-Zak img
-{
+
+/* Image Styles */
+section img {
     max-width: 100px;
     max-height: 100px;
+    border-radius: 10px; /* Rounded corners for images */
 }
-section ul{
-    list-style-type: square
+
+/* List Styles */
+section ul {
+    list-style-type: square; /* Square list style */
 }
+
+/* Game and Phone Info */
 .jeu_tél {
-    grid-row: 3;
-    grid-column: 1 /-1;
+    grid-column: 1 / -1; /* Spanning full width */
 }
-footer{
-    background-color: var(--primary-color);
+
+/* Footer Styles */
+footer {
     display: flex;
     justify-content: center;
-}
-footer>p{
-    max-width: 65ch;
-}
-/* Styles pour le carrousel */
-.carousel {
-    position: relative;
-    max-width: 600px; /* Ajustez selon vos besoins */
-    margin: auto;
-    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-top: 1px solid #ccc;
 }
 
-.carousel img {
-    width: 100%;
-    display: none; /* Masquer toutes les images par défaut */
+footer > p {
+    max-width: 65ch; /* Limit paragraph width for readability */
 }
 
-.carousel img.active {
-    display: block; /* Afficher seulement l'image active */
-}
-
+/* Navigation Buttons */
 .nav-button {
     position: absolute;
     top: 50%;
@@ -137,9 +153,14 @@ footer>p{
     border: none;
     cursor: pointer;
     padding: 10px;
-    font-size: 24px; /* Agrandissement des boutons */
+    font-size: 24px; /* Enlarged button size */
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 1); /* Full opacity on hover */
 }
 
 .prev {
@@ -150,17 +171,36 @@ footer>p{
     right: 10px;
 }
 
-section {
-    margin: 20px 0;
+/* Slideshow Styles */
+.slide {
+    display: none; /* Hide slides by default */
 }
 
-h2, h3, h4 {
-    margin: 10px 0;
+.fade {
+    animation: fade 1.5s;
 }
 
-footer {
+@keyframes fade {
+    from { opacity: 0.5; } 
+    to { opacity: 1; }
+}
+
+.dots {
     text-align: center;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-top: 1px solid #ccc;
+    padding: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+    background-color: #717171;
 }

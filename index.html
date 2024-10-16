@@ -3,37 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXT</title>
+    <title>Document</title>
     <link rel="stylesheet" href="dossier css/reset.css">
     <link rel="stylesheet" href="dossier css/Variable.css">
     <link rel="stylesheet" href="dossier css/style.css">
     <link rel="stylesheet" href="dossier css/Tel.css">
-    <link rel="shortcut icon" href="asset/X.ico" alt="icône" />
 </head>
 <body>
     <nav>
         <a href="#">
-            <img src="asset\NEXT.jpg" class="logo">
+            <img src="asset/NEXT.jpg" class="logo">
         </a>
         <p><a href="#"> J'adore les cookies</a></p>
     </nav>
     <main>
-        <header>
-            <section class="carousel">
-                <h1>
-                    FRONT-END
-                </h1>
-                <p><a href="#">&#10096;</a></p>
-                <article class="carousse">
-                    <img src="asset/20241010_090346.jpg">
-                    <img src="asset/20241010_090415.jpg">
-                    <img src="asset/20241010_092629.jpg">
-                </article>
-                <p><a href="#">&#10097;</a></p>
-            </section>
-    </header>
-
-    <h2 class="titrev2">BACK-ENDS</h2>
+        <header class="slideshow-container">
+            <div class="slide fade">
+                <img src="asset/20241010_090346.jpg" alt="Image 1">
+            </div>
+            <div class="slide fade">
+                <img src="asset/20241010_090415.jpg" alt="Image 2">
+            </div>
+            <div class="slide fade">
+                <img src="asset/20241010_092629.jpg" alt="Image 3">
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </header>
+    
         <section id="section-Zak">
             <h2>Zakaria</h2>
             <h2>18 ans</h2>
@@ -43,7 +43,7 @@
                 <li>Lorem ipsum dolor sit amet.</li>
                 <li>Lorem ipsum dolor sit amet.</li>
             </ul>
-        <h3 class="jeu_tél">🎮:DS / PSP 
+        <h3>🎮:DS / PSP 
             <br> 📱: 07 69 69 69 69
         </h3>
         </section>
@@ -56,8 +56,7 @@
                 <li>Lorem ipsum dolor sit amet.</li>
                 <li>Lorem ipsum dolor sit amet.</li>
             </ul>
-            
-        <h3 class="jeu_tél">🎮: Nintendo Switch / PS3 
+        <h3>🎮: Nintendo Switch / PS3 
             <br> 📱: 06 666-666</h3>
         </section>
         <section id="section-Julien">
@@ -69,7 +68,7 @@
                 <li>Lorem ipsum dolor sit amet.</li>
                 <li>Lorem ipsum dolor sit amet.</li>
             </ul>
-        <h3 class="jeu_tél">🎮: PC
+        <h3>🎮: PC
             <br> 📱:222 2 6 444 555 555 33</h3>
         </section>
     </main>
@@ -78,5 +77,6 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, quae nihil libero, eligendi reiciendis excepturi consequatur dolore necessitatibus maiores quod aliquid quis officiis. Eum soluta dicta animi modi voluptas delectus excepturi, reiciendis consequatur sit et tempora rerum harum rem optio libero. Aliquam, eaque maxime. Est ipsam cum non impedit vero?
         </p>
     </footer>
+    <script src="carrousel.js"></script>
 </body>
 </html>
