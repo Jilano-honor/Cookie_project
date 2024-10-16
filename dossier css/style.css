@@ -10,18 +10,42 @@ nav{
     height: 10vh;
     padding: 0 2rem;
  }
+ .logo{
+    max-width: 50%;
+    max-height: 15vh;
+ }
+
  nav>p>a{
     text-decoration: none;
     color:var(--tertiary-color);
 }
-header>section{
-    border-radius: 50px;
-    background-color: chartreuse;  
+h1 { 
+    margin-bottom: 1rem; 
+    text-align: center; 
+}
+header > section {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr 2fr;
+    grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
     margin: 3rem 2.5rem;
+    width: 50vw;
+    height: 50vh;
+}
+.carousel {
+    position: relative;
+    width: 100%; /* Ajuste à 50% de la largeur de la section */
+    overflow: hidden; 
+}
+.carousel-images {
+    display: flex; 
+    transition: transform 0.5s ease; 
+    width: 33.33%; /* Ajuste selon le nombre d'images */
+}
+.carousel-images img {
+    width: 33.33%; /* Ajuste selon le nombre d'images */
+    height: auto;
+}
 }
 header>section>p>a{
     text-decoration: none;
@@ -37,8 +61,8 @@ header>section>article>img{
     border-radius: 35px;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
     justify-items: center;
     margin:0 3rem;
     margin-bottom: 3.5rem;
@@ -48,8 +72,8 @@ header>section>article>img{
     border-radius: 35px;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
     justify-items: center;
     margin:0 3rem;
     margin-bottom: 3.5rem;
@@ -59,21 +83,25 @@ header>section>article>img{
     border-radius: 35px;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
     justify-items: center;
     margin:0 3rem;
     margin-bottom: 3.5rem;
 }
-section h2 {
-    display: inline-block;
-}
-section img{
-    width: 200px;
-    height: 200px;
+#section-Julien img,
+#section-Augustin img,
+#section-Zak img
+{
+    max-width: 100px;
+    max-height: 100px;
 }
 section ul{
     list-style-type: square
+}
+.jeu_tél {
+    grid-row: 3;
+    grid-column: 1 /-1;
 }
 footer{
     background-color: var(--primary-color);
