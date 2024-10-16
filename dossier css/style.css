@@ -83,12 +83,12 @@ h1{
 #nous{
     font-size: 2rem;
 }
-h3,li{
+h3,li, footer p{
     font-family: "Roboto Serif";
     font-size: 1.5rem;
 }
 li{
-    max-width: 20ch;
+    max-width: 30ch;
 }
 h3{
     grid-column: 1/-1;
