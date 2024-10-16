@@ -7,9 +7,6 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-#front {
-    
-}
 
 /* Main Styles */
 main {
@@ -76,18 +73,29 @@ h1, h2, h3, h4 {
     margin: 10px 0;
     text-align: center; /* Center align headings */
 }
-
-/* Section Styles */
-section {
-    margin: 30px 0; /* Increased vertical margin */
-    border-radius: 35px;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
-    gap: 20px; /* Gap between grid items */
-    padding: 20px; /* Inner padding */
+h1,h2{
+    font-family: "Black Ops One";
+    font-weight: bold;
 }
-/* Specific Section Styles */
+h1{
+    font-size: 2rem;
+}
+#nous{
+    font-size: 2rem;
+}
+h3,li{
+    font-family: "Roboto Serif";
+    font-size: 1.5rem;
+}
+li{
+    max-width: 20ch;
+}
+h3{
+    grid-column: 1/-1;
+    grid-row: 3;
+}
+/*
+* Specific Section Styles */
 #nous {
     margin: 50px 0 ;
 }
@@ -107,28 +115,25 @@ section {
     background-color: var(--tertiary-color);
     border: black 6px solid;
 }
-
-#section-Zak h2 {
-    font-size: larger;
+#section-Zak h2, 
+#section-Augustin h2, 
+#section-Julien h2 {
+    font-size: 48px;
 }
+
 
 /* Image Styles */
 section img {
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 400px;
+    max-height: 400px;
     border-radius: 10px; /* Rounded corners for images */
 }
 
 /* List Styles */
 section ul {
     list-style-type: square; /* Square list style */
+    
 }
-
-/* Game and Phone Info */
-.jeu_tél {
-    grid-column: 1 / -1; /* Spanning full width */
-}
-
 /* Footer Styles */
 footer {
     display: flex;
@@ -152,7 +157,7 @@ footer > p {
     border: none;
     cursor: pointer;
     padding: 10px;
-    font-size: 24px; /* Enlarged button size */
+    font-size: 1.5rem; /* Enlarged button size */
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s; /* Smooth background transition */
