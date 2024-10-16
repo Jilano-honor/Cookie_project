@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Global Styles */ 
 * {
     box-sizing: border-box;
 }
@@ -28,6 +28,9 @@ header {
     justify-content: center; /* Center slideshow container */
     align-items: center; /* Center slideshow vertically */
     width: 100%; /* Full width */
+    position: relative; /* For navigation buttons */
+    max-width: 100%;
+    overflow: hidden;
 }
 
 header img {
@@ -76,46 +79,14 @@ section {
     border-radius: 35px;
     overflow: hidden;
     display: grid;
-<<<<<<< HEAD
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
     gap: 20px; /* Gap between grid items */
     padding: 20px; /* Inner padding */
 }
 
-#section-Zak {
-    background-color: blue;
-}
-
-#section-Augustin {
-    background-color: yellow;
-}
-
-#section-Julien {
-    background-color: lightcyan;
-=======
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-items: center;
-    margin: 3rem 2.5rem;
-    width: 50vw;
-    height: 50vh;
-}
-
-header>section>article>img{
-    width: 150px;
-    height: 150px;
-}
-
-.titrev2{
-    display: flex;
- justify-content: center;
- padding-bottom: 50px;
-}
-
-#section-Zak{
-  
+/* Specific Section Styles */
+#section-Zak, #section-Augustin, #section-Julien {
     background-color: var(--tertiary-color);
-    background-size: cover;
     border-radius: 150px; 
     overflow: hidden;
     display: grid;
@@ -123,40 +94,13 @@ header>section>article>img{
     grid-template-rows: auto auto auto;
     justify-items: center;
     row-gap: 4rem;
-    margin:0 3rem;
+    margin: 0 3rem;
     margin-bottom: 3.5rem;  
-    padding-bottom: 2.5rem;
-    padding-top: 2.5rem;
-}
-#section-Zak h2{
-    font-size: larger;
-    
+    padding: 2.5rem 0; /* Top and bottom padding */
 }
 
-#section-Augustin{
-    background-color: var(--tertiary-color);
-    border-radius: 150px;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    justify-items: center;
-    row-gap: 4rem;
-    margin:0 3rem;
-    margin-bottom: 3.5rem;
-}
-#section-Julien{
-    background-color: var(--tertiary-color);
-    border-radius: 150px;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    justify-items: center;
-    row-gap: 4rem;
-    margin:0 3rem;
-    margin-bottom: 3.5rem;
->>>>>>> 89c84552dd5a86229bb1888a05864bc6bbb22452
+#section-Zak h2 {
+    font-size: larger;
 }
 
 /* Image Styles */
@@ -218,12 +162,6 @@ footer > p {
 }
 
 /* Slideshow Styles */
-.slideshow-container {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-}
-
 .slide {
     display: none; /* Hide slides by default */
 }
