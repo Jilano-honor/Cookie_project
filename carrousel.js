@@ -1,19 +1,24 @@
-const images = document.querySelector('.carousel-images');
-const nextButton = document.querySelector('.next');
-const prevButton = document.querySelector('.prev');
-let currentIndex = 0;
+let slideIndex = 0;
+showSlides();
 
-function updateCarousel() {
-    const offset = -currentIndex * (100 / 3); // Ajuste selon le nombre d'images
-    images.style.transform = `translateX(${offset}%)`;
+function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
+    
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";  
+    dots[slideIndex - 1].className += " active";
+    setTimeout(showSlides, 10000); // Change image every 3 seconds
 }
 
-nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % 3; // Ajuste selon le nombre d'images
-    updateCarousel();
-});
-
-prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + 3) % 3; // Ajuste selon le nombre d'images
-    updateCarousel();
-});
+function currentSlide(n) {
+    slideIndex = n - 1;
+    showSlides();
+}
