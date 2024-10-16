@@ -7,6 +7,9 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+#front {
+    
+}
 
 /* Main Styles */
 main {
@@ -16,6 +19,7 @@ main {
 
 /* Header Styles */
 header {
+    margin-top: 2rem;
     height: 80vh; /* Set header height to 80% of the viewport height */
     display: flex;
     justify-content: center; /* Center images horizontally */
@@ -57,14 +61,14 @@ nav {
 }
 
 nav > p > a {
-    text-decoration: none;
-    color: var(--tertiary-color);
+    
+    color: var(--primary-color);
     font-weight: bold; /* Emphasized link */
     transition: color 0.3s ease; /* Smooth hover effect */
 }
 
 nav > p > a:hover {
-    color: var(--highlight-color); /* Highlight color on hover */
+    color: var(--quaternary-color); /* Highlight color on hover */
 }
 
 /* Heading Styles */
@@ -83,8 +87,10 @@ section {
     gap: 20px; /* Gap between grid items */
     padding: 20px; /* Inner padding */
 }
-
 /* Specific Section Styles */
+#nous {
+    margin: 50px 0 ;
+}
 #section-Zak, 
 #section-Augustin, 
 #section-Julien {
