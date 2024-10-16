@@ -43,8 +43,8 @@ function updateScoreDisplay() {
 
 // Fonction pour mettre à jour les coûts des auto-clickers et du boost
 function updateCosts() {
-    autoClickerCost = 800 * (autoClickerLevel + 1);
-    secondAutoClickerCost = 1200 * (secondAutoClickerLevel + 1);
+    autoClickerCost = Math.floor(100 * Math.pow(1.5, autoClickerLevel)); // Coût avec augmentation exponentielle
+    secondAutoClickerCost = Math.floor(300 * Math.pow(1.5, secondAutoClickerLevel));
     
     autoClickerCostElement.innerText = autoClickerCost;
     secondAutoClickerCostElement.innerText = secondAutoClickerCost;
@@ -134,12 +134,12 @@ function startSecondAutoClicker() {
 function purchaseClickBoost() {
     if (score >= clickBoostCost) {
         score -= clickBoostCost;
-        clickValue *= 1.10; // Augmente la valeur des clics de 10 %
+        clickValue *= 1.15; // Augmente la valeur des clics de 15 %
         updateScoreDisplay();
         clearError(); // Efface les messages d'erreur
 
         // Augmente le coût du boost de clics pour la prochaine fois
-        clickBoostCost *= 5; // Multiplie le coût par 5
+        clickBoostCost = Math.floor(clickBoostCost * 1.5); // Multiplie le coût par 1.5
         updateCosts(); // Met à jour l'affichage des coûts
     } else {
         showError(`Pas assez de score pour acheter le boost de clics ! Coût : ${clickBoostCost}, Score actuel : ${score.toFixed(2)}`);
