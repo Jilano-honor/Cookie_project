@@ -83,3 +83,55 @@ footer{
 footer>p{
     max-width: 65ch;
 }
+/* Styles pour le carrousel */
+.carousel {
+    position: relative;
+    max-width: 600px; /* Ajustez selon vos besoins */
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    display: none; /* Masquer toutes les images par défaut */
+}
+
+.carousel img.active {
+    display: block; /* Afficher seulement l'image active */
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px; /* Agrandissement des boutons */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+h2, h3, h4 {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+}
