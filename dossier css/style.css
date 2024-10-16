@@ -95,8 +95,12 @@ section {
     row-gap: 4rem;
     margin: 0 3rem;
     margin-bottom: 3.5rem;  
-    padding: 2.5rem 0; /* Top and bottom padding */
-    background-color: #717171;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+
+}
+#section-Zak h2{
+    font-size: larger;
 }
 
 #section-Zak h2 {
