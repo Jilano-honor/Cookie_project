@@ -30,7 +30,10 @@ nav {
     height: 10vh; /* Hauteur de la barre de navigation */
     padding: 0 2rem;
 }
-
+.logo{
+    max-width:50%;
+    max-height: 15vh;
+}
 nav > p > a {
     text-decoration: none;
     color: var(--tertiary-color);
@@ -71,16 +74,16 @@ main {
 }
 
 .upgrade-button img {
-    width: 50px; /* Ajuste la taille selon tes images */
-    height: 50px;
+    width: 255px; /* Ajuste la taille selon tes images */
+    height: 170px;
     margin-right: 10px;
 }
 
 /* Click Zone */
 .click-zone {
     cursor: pointer;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin: 0 auto;
     position: relative;
 }
