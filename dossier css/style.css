@@ -86,7 +86,6 @@ section {
 
 /* Specific Section Styles */
 #section-Zak, #section-Augustin, #section-Julien {
-    background-color: var(--tertiary-color);
     border-radius: 150px; 
     overflow: hidden;
     display: grid;
@@ -97,6 +96,7 @@ section {
     margin: 0 3rem;
     margin-bottom: 3.5rem;  
     padding: 2.5rem 0; /* Top and bottom padding */
+    background-color: #717171;
 }
 
 #section-Zak h2 {
