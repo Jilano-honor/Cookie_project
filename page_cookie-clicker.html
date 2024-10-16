@@ -21,30 +21,30 @@
     </div>
     <main class="hidden">
         <div class="container">
+            
             <div class="left">
                 <h2>Améliorations</h2>
-                <button class="upgrade-button" data-cost="10">
-                    <img src="asset/tenor.gif" alt="Amélioration 1">
-                    Amélioration 1
+                <button class="upgrade-button" id="autoClickerButton" data-cost="100">
+                    <img src="asset/tenor.gif" alt="Auto-Clicker">
+                    <p>Coût: <span id="autoClickerCost">100</span></p>
                 </button>
-                <button class="upgrade-button" data-cost="20">
+                <button class="upgrade-button" id="secondAutoClickerButton" data-cost="20">
                     <img src="asset/giphy.gif" alt="Amélioration 2">
-                    Amélioration 2
+                    <p>Coût: <span id="secondAutoClickerCost">300</span></p>
                 </button>
-                <button class="upgrade-button" data-cost="50">
+                <button class="upgrade-button" id="clickBoostButton" data-cost="50">
                     <img src="asset/200.gif" alt="Amélioration 3">
-                    Amélioration 3
+                    <p>Coût: <span id="clickBoostCost">50</span></p>
                 </button>
             </div>
             <div class="middle">
                 <div id="clickZone" class="click-zone">
                     <img id="clickImage" src="asset/tete1cookie.jpg" alt="Click Image">
+                    <div id="error-message" style="color: red;"></div>
                 </div>
             </div>
             <div class="right">
-                <h2>Statistiques</h2>
-                <p>Statistiques:<span id="score">0</span></p>
-                <p>Coût de l'amélioration: <span id="upgradeCost">0</span></p>
+                <p>$:<span id="score">0</span></p>
             </div>
         </div>
     </main>
