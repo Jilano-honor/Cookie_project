@@ -1,4 +1,4 @@
-/* Global Styles */ 
+/* Global Styles */
 * {
     box-sizing: border-box;
 }
@@ -34,8 +34,8 @@ header {
 }
 
 header img {
-    width: 50%; /* Set images to take 50% of the header space */
-    height: auto; /* Maintain aspect ratio */
+    width: 500px; /* Set images to take 50% of the header space */
+    height: 500px; /* Maintain aspect ratio */
     border-radius: 10px; /* Rounded corners for images */
     transition: none; /* No transition on hover */
 }
@@ -85,7 +85,9 @@ section {
 }
 
 /* Specific Section Styles */
-#section-Zak, #section-Augustin, #section-Julien {
+#section-Zak, 
+#section-Augustin, 
+#section-Julien {
     border-radius: 150px; 
     overflow: hidden;
     display: grid;
@@ -95,12 +97,9 @@ section {
     row-gap: 4rem;
     margin: 0 3rem;
     margin-bottom: 3.5rem;  
-    padding-bottom: 2.5rem;
-    padding-top: 2.5rem;
-
-}
-#section-Zak h2{
-    font-size: larger;
+    padding: 2.5rem 0; /* Padding for top and bottom */
+    background-color: var(--tertiary-color);
+    border: black 6px solid;
 }
 
 #section-Zak h2 {
