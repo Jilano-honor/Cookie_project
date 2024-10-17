@@ -2,7 +2,7 @@
 html, body {
     height: 100%; /* Prend toute la hauteur de la fenêtre */
     margin: 0; /* Enlève les marges par défaut */
-    font-family: Arial, sans-serif; /* Police par défaut pour tout le document */
+    font-family: "Roboto Serif"; /* Police par défaut pour tout le document */
     background-color: #f0f0f0; /* Couleur de fond de la page */
 }
 
@@ -34,17 +34,27 @@ nav {
     height: 10vh; /* Hauteur de la barre de navigation */
     padding: 0 2rem;
 }
+nav p{
+    font-size: 1.5rem;
+}
 .logo{
     max-width:50%;
     max-height: 15vh;
 }
 nav > p > a {
-    text-decoration: none;
-    color: var(--tertiary-color);
+    
+    color: var(--primary-color);
     font-weight: bold; /* Texte en gras pour plus de visibilité */
 }
 
+nav > p > a:hover {
+    color: var(--tertiary-color); /* Highlight color on hover */
+}
 /* Main Content */
+h1{
+    font-family: "Black Ops One";
+    font-size: 5rem;
+}
 main {
     display: flex;
     justify-content: center;

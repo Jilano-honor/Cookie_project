@@ -83,7 +83,7 @@ h1{
 #nous{
     font-size: 2rem;
 }
-h3,li, footer p{
+h3,li, footer p, nav p{
     font-family: "Roboto Serif";
     font-size: 1.5rem;
 }
