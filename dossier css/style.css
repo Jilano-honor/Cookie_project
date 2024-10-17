@@ -124,8 +124,8 @@ h3{
 
 /* Image Styles */
 section img {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 500px;
+    max-height: 500px;
     border-radius: 10px; /* Rounded corners for images */
 }
 
@@ -134,6 +134,18 @@ section ul {
     list-style-type: square; /* Square list style */
     
 }
+.centre{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.centre button{
+    width: 20rem;
+    background-color: var(--tertiary-color);
+    box-shadow: 3px 3px 2px 0;
+}
+
+
 /* Footer Styles */
 footer {
     display: flex;
