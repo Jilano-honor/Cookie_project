@@ -119,7 +119,7 @@ function purchaseAutoClicker(autoClicker) {
         clearError();
         updateCosts();
         updateAutoClickerDisplays();
-
+        updateScoreDisplay();
         if (!autoClicker.active) {
             autoClicker.start();
         }
@@ -145,7 +145,7 @@ function purchaseClickBoost() {
         clickBoostLevel++;  // Incrémente le niveau de boost de clic
         clearError();
         updateClickValueDisplay();
-
+        updateScoreDisplay();
         clickBoostCost = Math.floor(clickBoostCost * 1.5);
         updateCosts();
         updateAutoClickerDisplays();  // Met à jour l'affichage des niveaux
