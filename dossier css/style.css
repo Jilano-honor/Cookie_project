@@ -218,5 +218,8 @@ footer > p {
 }
 
 .dot:hover {
-    background-color: #717171;
+    background-color:var(--tertiary-color);
+}
+.dot.active {
+    background-color: var(--primary-color);
 }
