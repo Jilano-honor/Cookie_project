@@ -22,7 +22,7 @@ body {
 }
 /* toggle button*/
 #toggleButton{
-    height: 100vh;
+    height: 86vh;
     display: grid;
 }
 /* Navigation */
