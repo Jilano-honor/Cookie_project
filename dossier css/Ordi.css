@@ -20,7 +20,11 @@ body {
     width: 90%;
     align-items: center;
 }
-
+/* toggle button*/
+#toggleButton{
+    height: 100vh;
+    display: grid;
+}
 /* Navigation */
 nav {
     display: flex;
