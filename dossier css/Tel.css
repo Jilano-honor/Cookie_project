@@ -1,0 +1,22 @@
+/*navigation*/
+nav>p{
+    font-size: 1rem;
+}
+/*header*/
+header img{
+    width: 350px;
+    height: 350px;
+}
+/*section*/
+#section-Zak, 
+#section-Augustin, 
+#section-Julien{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+}
+section img{
+    margin: 0 1rem;
+}

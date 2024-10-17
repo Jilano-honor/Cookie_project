@@ -1,0 +1,26 @@
+/*main*/
+main{
+    height: auto;
+}
+/*contenue*/
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.left, .middle, .right {
+    width: auto;
+}
+.upgrade-button img {
+    height: 25%;
+    width: 25%;
+}
+.right{
+    justify-content: center;
+    margin: 2rem 0;
+}
+.middle{
+    margin: 1.5rem 0;
+}
+h1{
+    font-size: 3rem;
+}
