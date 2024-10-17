@@ -92,6 +92,9 @@ main {
     height: 170px;
     margin-right: 10px;
 }
+.autoClickerButton{
+    transform: scaleX(-1);
+}
 
 /* Click Zone */
 .click-zone {
